@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 Route::get('/peripheral', 'PeripheralController@index')
   -> name('peripheral-index');
+
+Route::get('/peripheral/{id}', 'PeripheralController@show')
+  -> name('peripheral-show');

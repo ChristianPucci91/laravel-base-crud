@@ -4,8 +4,11 @@
 
   @foreach ($peripherals as $peripheral)
 
-    <p>{{ $peripheral -> name}}</p>
+    <a href="{{ route('peripheral-show', $peripheral -> id )}}">
+      
+      <h3>{{ $peripheral -> name}}</h3>
 
+    </a>
 
   @endforeach
 

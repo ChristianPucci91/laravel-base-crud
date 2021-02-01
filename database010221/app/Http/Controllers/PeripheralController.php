@@ -15,4 +15,12 @@ class PeripheralController extends Controller
      return view('pages.peripheral',compact('peripherals'));
 
     }
+
+    public function show($id) {
+
+     $peripheral = Peripheral::findOrFail($id);
+
+     return view('pages.peripheral2',compact('peripheral'));
+
+    }
 }
