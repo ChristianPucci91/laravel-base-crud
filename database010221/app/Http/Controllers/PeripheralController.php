@@ -29,4 +29,11 @@ class PeripheralController extends Controller
      return view('pages.peripheral-create');
 
     }
+
+    public function store(Request $request) {
+      
+      Peripheral::create($request -> all());
+      return redirect() -> route('peripheral-index');
+
+    }
 }

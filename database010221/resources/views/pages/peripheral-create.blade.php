@@ -4,7 +4,10 @@
 
    <h1>Crea nuova periferica</h1>
 
-   <form action="name" method="post">
+   <form action="{{ route('peripheral-store')}}" method="POST">
+
+     @csrf
+     @method('POST')
 
      <label for="name">Name: </label>
      <input type="text" name="name">

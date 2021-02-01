@@ -26,3 +26,6 @@ Route::get('/peripheral/{id}', 'PeripheralController@show')
 
 Route::get('new/peripheral' , 'PeripheralController@create')
   -> name('peripheral-create');
+
+Route::post('new/peripheral/store' , 'PeripheralController@store')
+  ->name('peripheral-store');
