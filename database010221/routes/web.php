@@ -23,3 +23,6 @@ Route::get('/peripheral', 'PeripheralController@index')
 
 Route::get('/peripheral/{id}', 'PeripheralController@show')
   -> name('peripheral-show');
+
+Route::get('new/peripheral' , 'PeripheralController@create')
+  -> name('peripheral-create');

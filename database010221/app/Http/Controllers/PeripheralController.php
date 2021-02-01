@@ -23,4 +23,10 @@ class PeripheralController extends Controller
      return view('pages.peripheral2',compact('peripheral'));
 
     }
+
+    public function create() {
+
+     return view('pages.peripheral-create');
+
+    }
 }
